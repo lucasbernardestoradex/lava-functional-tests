@@ -8,9 +8,4 @@ metadata:
 
 run:
     steps:
-        - lava-test-case linux-posix-pwd --shell pwd
-        - lava-test-case linux-posix-uname --shell uname -a
-        - lava-test-case linux-posix-vmstat --shell vmstat
-        - lava-test-case linux-posix-ifconfig --shell ifconfig -a
-        - lava-test-case linux-posix-lscpu --shell lscpu
-        - lava-test-case linux-posix-lsb_release --shell lsb_release -a
+        - lava-test-case linux-posix-os-release --shell cat /etc/os-release
